@@ -1,0 +1,99 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Restaurant Evaluation Survey</title>
+    </head>
+
+    <body>
+        <div class="fixed"></div>
+        <div class="container">
+            <h1 id="title">Restaurant Evaluation Survey</h1>
+            <p id="description">We would love to hear about your experience. Please let us know how your experience was
+                today.</p>
+
+            <form id="survey-form" action="http://www.example.com" method="get">
+                <div>
+                    <label for="name" id="name-label"> Name:
+                        <input id="name" type="text" name="name" maxlength="2" required placeholder="Name">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="email" id="email-label">Email:
+                        <input id="email" type="email" name="email" required placeholder="Email">
+                    </label>
+                </div>
+
+
+                <div>
+                    <label for="age" id="number-label"> Age:
+                        <input id="number" type="number" name="name" min="0" max="100" placeholder="Age">
+                    </label>
+                </div>
+
+
+                <div> In a typcial month, how often do you visit our restaurant:
+                    <select name="visits" id="dropdown">
+                        <option value="first">This is my first visit</option>
+                        <option value="bi-weekly">once or twice</option>
+                        <option value="monthly">More than 3 times</option>
+                    </select>
+                </div>
+
+                <div> Were you greeted by a friendly face: <br>
+                    <input type="radio" name="radio" value="yes">Yes
+                    <input type="radio" name="radio" value="no">No
+                </div>
+
+                <div class="input">
+                    <label id="quality" for="quality"> Quality of food:</label>
+                    <input type="checkbox" name="quality" value="excellent"> Excellent
+                    <input type="checkbox" name="quality" value="good"> Good
+                    <input type="checkbox" name="quality" value="fair"> Fair
+                    <input type="checkbox" name="quality" value="poor"> Poor
+
+                </div>
+
+                <div class="input">
+                    <label for="portion">Portion size:</label>
+                    <input type="checkbox" name="portion" value="excellent"> Excellent
+                    <input type="checkbox" name="portion" value="good"> Good
+                    <input type="checkbox" name="portion" value="fair"> Fair
+                    <input type="checkbox" name="portion" value="poor"> Poor
+                </div>
+
+                <div class="input">
+                    <label for="service">Service:</label>
+                    <input type="checkbox" name="service" value="excellent"> Excellent
+                    <input type="checkbox" name="service" value="good"> Good
+                    <input type="checkbox" name="service" value="fair"> Fair
+                    <input type="checkbox" name="service" value="poor"> Poor
+                </div>
+
+                <div class="input">
+                    <label for="clean">Cleanliness:</label>
+                    <input type="checkbox" name="clean" value="excellent"> Excellent
+                    <input type="checkbox" name="clean" value="good"> Good
+                    <input type="checkbox" name="clean" value="fair"> Fair
+                    <input type="checkbox" name="clean" value="poor"> Poor
+                </div>
+
+                <div> Please take a moment to tell us about your overall visit. What stood out to you? What could we do
+                    to improve? <br>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+
+
+            </form>
+
+
+    </body>
+
+
+</html>
